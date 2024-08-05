@@ -85,7 +85,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-gray-950">
       <Nav />
       <div className="p-5 grow flex flex-col items-center justify-center">
-        {isConnected ? (
           <>
             <div className="flex flex-col items-center">
               (Hardhat Test)
@@ -133,11 +132,6 @@ export default function Home() {
               )}
             </div>
           </>
-        ) : (
-          <div className="text-center text-2xl text-white">
-            Please connect your wallet to mint tokens.
-          </div>
-        )}
       </div>
       <Footer />
     </div>
